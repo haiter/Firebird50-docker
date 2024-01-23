@@ -108,11 +108,6 @@ if [[ "$1" == "firebird" ]]; then
     FBPID=$!
     
     wait "$FBPID"
-
-
-
-
-  
   
 fi
 

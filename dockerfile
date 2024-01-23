@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM ubuntu:22.04 as build
+FROM --platform=$BUILDPLATFORM ubuntu:24.04 as build
 
 ENV PREFIX=/usr/local/firebird
 
@@ -15,7 +15,7 @@ RUN chmod +x ./build.sh && \
     ./build.sh  && \
     rm -f ./build.sh  
 
-FROM --platform=$TARGETPLATFORM ubuntu:22.04
+FROM --platform=$TARGETPLATFORM ubuntu:24.04
 
 ENV PREFIX=/opt/firebird
 ENV VOLUME=/firebird
