@@ -3,5 +3,5 @@
 # Description
  This is a Firebird SQL Database container. Firebird-5.0.0.1306-0-linux-x64
 # Usage: 
- docker run -p 3050:3050/tcp -d -it -v D:\diretorio:/firebird  paulohaiter/firebird50:latest 
+ docker run -p 3050:3050/tcp -d -it -v D:\diretorio:/firebird  paulohhaiter/firebird50:latest 
  
